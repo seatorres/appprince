@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^home$ main.php?page=home [L]
+RewriteRule ^about$ main.php?page=about [L]
+RewriteRule ^damas$ main.php?page=damas [L]
+RewriteRule ^camisetas$ main.php?page=camisetas [L]
+RewriteRule ^blusas$ main.php?page=blusas [L]
+RewriteRule ^jeans$ main.php?page=jeans [L]
+RewriteRule ^shorts$ main.php?page=shorts [L]
+RewriteRule ^vestidos$ main.php?page=vestidos [L]
+
+
+
+
+
+
+RewriteRule ^caballeros$ main.php?page=caballeros [L]
+RewriteRule ^niños$ main.php?page=niños [L]
+RewriteRule ^service$ main.php?page=service [L]
+RewriteRule ^portfolio$ main.php?page=portfolio [L]
+RewriteRule ^page-(.*)$ main.php?page=portfolio&hal=$1 [L]
+
+RewriteRule ^contact$ main.php?page=contact [L]
+RewriteRule ^contact-success$ main.php?page=contact&alert=1 [L]
+
+Options All -Indexes
+</IfModule>
